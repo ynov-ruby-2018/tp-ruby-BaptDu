@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+<%= form_tag posts_path, method: :post do %>
+  <%= text_area_tag 'post[content]', @post.content, class: 'materialize-textarea' %>
+  <%= submit_tag 'Save', class: 'btn' %>
+
+<%end %>
+</div>
+
+  <div class="row">
+  <% @posts.each do |post| %>
+    <div class="col s12 m12 l12">
+      <div class="card">
+        <div class="card-content">
+          <p><%= post.content %></p>
+        </div>
+        <div class="card-action">
+        <%= post.user.email %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
