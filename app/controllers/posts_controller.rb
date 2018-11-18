@@ -14,6 +14,8 @@ class PostsController < ApplicationController
 
       redirect_to root_path
   end
+  
+  # Manque des features ici ! (like / dislike)
 
 private
     def post_params
