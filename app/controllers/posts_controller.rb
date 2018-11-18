@@ -7,6 +7,8 @@ class PostsController < ApplicationController
   end
 
   def create
+    # 2 espaces pour l'indentation en Ruby... je vais mettre ça sur le dos de votre IDE, 
+    # mais mettez du soin à la mise en forme SVP.
       post = Post.new(post_params)
       post.save
 
