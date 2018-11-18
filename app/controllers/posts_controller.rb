@@ -18,6 +18,7 @@ private
         params.require(:post).permit(
             :content
         ).merge(user_id: current_user.id)
+      # Et là, c'est le drame... vu qu'on est pas obligé de s'authentifier, ça va crasher vu que current_user == nil 
   end
 
 end
