@@ -1,6 +1,7 @@
 require "application_system_test_case"
 
 class PostsTest < ApplicationSystemTestCase
+  # Haaaaa, TRES BIEN ! On avait même pas vu les test "end to end" ! Très bien.
   setup do
     @post = posts(:one)
   end
